@@ -88,7 +88,7 @@ let Setting = class Setting extends React.Component {
                     React.createElement(Text, { style: styles.text },
                         "Warn me when active miner \u2264 ",
                         accountInfo.alert.miner_value)),
-                React.createElement(Item, { extra: React.createElement(Picker, { okText: "\u786E\u5B9A", dismissText: "\u53D6\u6D88", data: this.getHoursArray(), cols: 1, value: [accountInfo.alert.alert_interval], onOk: (v) => {
+                React.createElement(Item, { extra: React.createElement(Picker, { okText: "确定", dismissText: "取消", data: this.getHoursArray(), cols: 1, value: [accountInfo.alert.alert_interval], onOk: (v) => {
                             this.handleAlertInterval(v[0], account);
                         } },
                         React.createElement(CustomChildren, null)) },

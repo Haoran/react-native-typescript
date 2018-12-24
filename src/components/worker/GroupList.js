@@ -85,7 +85,7 @@ let App = class App extends Component {
             ];
         };
         return (React.createElement(ScrollView, { style: styles.contentContainer, showsVerticalScrollIndicator: false }, minerLoading ?
-            React.createElement(ActivityIndicator, { text: "\u6B63\u5728\u52A0\u8F7D...", animating: minerLoading, styles: _loadingStyle })
+            React.createElement(ActivityIndicator, { text: "正在加载...", animating: minerLoading, styles: _loadingStyle })
             :
                 React.createElement(List, null, groupList.sort(compare("gid")).map((item, index) => {
                     return (React.createElement(SwipeAction, { disabled: item.gid == -1 || item.gid == 0 ? true : false, autoClose: true, key: item.gid, style: { backgroundColor: 'transparent' }, right: right(item) },

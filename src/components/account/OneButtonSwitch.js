@@ -47,7 +47,7 @@ let OneButtonSwitch = class OneButtonSwitch extends Component {
         const { current_mode, support_coins } = this.props.navigation.state.params;
         const { destCoin, loading } = this.store;
         return (React.createElement(View, { style: styles.container },
-            React.createElement(ActivityIndicator, { text: "\u6B63\u5728\u52A0\u8F7D...", toast: true, animating: loading }),
+            React.createElement(ActivityIndicator, { text: "正在加载...", toast: true, animating: loading }),
             React.createElement(WhiteSpace, null),
             React.createElement(WingBlank, null,
                 React.createElement(Text, { style: { color: '#8E8E93', fontSize: adapt.setSpText(13) } }, "Warning: Due to the special difficulty adjustment rule and currency fluctuation of Bitcoin Cash\uFF0Cplease use this function carefully\uFF01")),

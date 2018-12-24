@@ -45,7 +45,7 @@ let Modify = class Modify extends Component {
             React.createElement(WhiteSpace, null),
             this.hashrate_alert ?
                 React.createElement(List, { renderHeader: () => 'WARN ME WHEN HASHRATE ≤' },
-                    React.createElement(InputItem, { type: "number", value: this.hashrate_value.toString(), onChangeText: (v) => this.hashrate_value = v, extra: React.createElement(Picker, { okText: "\u786E\u5B9A", dismissText: "\u53D6\u6D88", data: this.units, cols: 1, value: [this.hashrate_unit], onOk: (v) => {
+                    React.createElement(InputItem, { type: "number", value: this.hashrate_value.toString(), onChangeText: (v) => this.hashrate_value = v, extra: React.createElement(Picker, { okText: "确定", dismissText: "取消", data: this.units, cols: 1, value: [this.hashrate_unit], onOk: (v) => {
                                 this.hashrate_unit = v[0];
                             } },
                             React.createElement(CustomChildren, null)) })) : null));
