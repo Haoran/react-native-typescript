@@ -1,0 +1,8 @@
+
+node_modules
+android/app/build/*
+android/
+ios/build/*
+ios/build/
+ios/bundle/
+ios/bundle/*
